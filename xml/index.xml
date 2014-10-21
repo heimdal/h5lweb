@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="heimdal.xml"/>
+
+  <header>
+    <title>Heimdal</title>
+    <text>
+      The Heimdal 
+      <a href="http://www.ietf.org/rfc/rfc4120.txt">Kerberos 5</a>,
+      <a href="http://www.ietf.org/rfc/rfc3280.txt">PKIX</a>,
+      <a href="http://www.ietf.org/rfc/rfc3369.txt">CMS</a>,
+      <a href="http://www.ietf.org/rfc/rfc2743.txt">GSS-API</a>,
+      <a href="http://www.ietf.org/rfc/rfc4178.txt">SPNEGO</a>,
+      <a href="http://en.wikipedia.org/wiki/NTLM">NTLM</a>,
+      <a href="http://www.ietf.org/rfc/rfc2617.txt">Digest-MD5</a> and,
+      <a href="http://www.ietf.org/rfc/rfc2222.txt">SASL</a>
+      implementation.
+    </text>
+  </header>
+
+  <nav/>
+
+  <three>
+    <left>
+
+	<h3>Get Heimdal</h3>
+	Heimdal <a href="binaries.html">binaries</a> and
+	<a href="sources.html">source-code</a>.
+
+	<h3>Heimdal 1.5</h3>
+	<a href="/manual/heimdal-1-5-branch/info/heimdal/">Kerberos 5</a>, 
+	<a href="/manual/heimdal-1-5-branch/info/hx509/">HX509</a>,<br/>
+
+	<a href="/manual/heimdal-1-5-branch/hcrypto/">hcrypto-api</a>,
+	<a href="/manual/heimdal-1-5-branch/hx509/">hx509-api</a>,
+	<a href="/manual/heimdal-1-5-branch/hdb/">hdb-api</a>,
+	<a href="/manual/heimdal-1-5-branch/gssapi/">gss-api</a>,
+	<a href="/manual/heimdal-1-5-branch/krb5/">krb5-api</a>,
+	<a href="/manual/heimdal-1-5-branch/ntlm/">ntlm-api</a>,
+	<a href="/manual/heimdal-1-5-branch/wind/">wind-api</a>.
+
+	<h3>Development version documentation</h3>
+	<a href="/manual/HEAD/info/heimdal/">Kerberos 5</a>, 
+	<a href="/manual/HEAD/info/hx509/">HX509</a>,<br/>
+
+	<a href="/manual/HEAD/hcrypto/">hcrypto-api</a>,
+	<a href="/manual/HEAD/hx509/">hx509-api</a>,
+	<a href="/manual/HEAD/hdb/">hdb-api</a>,
+	<a href="/manual/HEAD/gssapi/">gss-api</a>,
+	<a href="/manual/HEAD/krb5/">krb5-api</a>,
+	<a href="/manual/HEAD/ntlm/">ntlm-api</a>,
+	<a href="/manual/HEAD/wind/">wind-api</a>.
+
+	<h3>Other documentation</h3>
+	Jason Garman's <a href="http://books.google.com/books?id=mVIA-CQHDjEC">Kerberos: The Definitive Guide</a> published by <a href="http://oreilly.com/">O'Reilly</a>.
+	The <a href="http://web.mit.edu/kerberos/www/">MIT Kerberos page</a>.
+	The (rather old) <a href="http://www.cmf.nrl.navy.mil/CCS/people/kenh/kerberos-faq.html">Kerberos FAQ</a>.
+	A (currenly semi-finished) <a href="http://www.zeroshell.net/eng/kerberos/">tutorial</a> from the ZeroShell Linux distribution.
+
+	<h3>Heimdal Blog</h3>
+	Heimdal have a <a href="/blog/">blog</a> where we write about
+	technical matters.
+
+    </left>
+
+    <middle>
+	<h3>What is Heimdal?</h3>
+
+	<p>
+	  Heimdal is an implementation of
+	  <a href="http://www.ietf.org/rfc/rfc4120.txt">Kerberos 5</a>
+	  (and some more stuff) largely written in Sweden (which was
+	  important when we started writing it, less so now). It is
+	  freely available under a three clause BSD style license.
+	</p>
+	<p>
+	  Other free implementations include the one from
+	  <a href="http://web.mit.edu/kerberos/www/">MIT</a>, and
+	  <a href="http://josefsson.org/shishi/">Shishi</a>.
+	  Also Microsoft Windows and Sun's Java come with implementations of Kerberos.
+	</p>
+	
+	<h3>Code</h3>
+	
+	<p>
+	  The code is currently at release 
+	  <show-last-release-version/>
+	  and is available at
+	  <a href="http://www.h5l.org/dist/">www.h5l.org/dist/</a>,
+	  also mirrored by
+	  <a href="ftp://ftp.sunet.se/pub/unix/admin/mirror-pdc/heimdal/src/">SUNET</a>.
+
+	  Information about where to find the <a href="sources.html">source code</a> and 
+	  <a href="releases/">older release history</a> is also
+	  available.  All code is signed with Heimdal's 
+	  <a href="pgp-signing.txt">signing key</a>.
+	</p>
+
+	<h3>Mail</h3>
+
+	There are two mailings lists:
+	<a href="http://list.sics.se/sympa/info/heimdal-announce">heimdal-announce</a> and
+	<a href="http://list.sics.se/sympa/info/heimdal-discuss">heimdal-discuss</a>
+	(<a href="https://list.sics.se/sympa/arc/heimdal-discuss">ml-archive</a>,
+	<a href="http://www.mail-archive.com/heimdal-discuss@sics.se/">mail-archive</a>,
+	<a href="http://news.gmane.org/gmane.comp.encryption.kerberos.heimdal.general">gmane</a>).
+
+	<p>
+	  Bugreports should be sent
+	  to <a href="mailto:heimdal-bugs@h5l.org">heimdal-bugs@h5l.org</a>,
+	  PGP key for <a href="pgp-contact.txt">security sensitive bug
+	  reports</a> (key id 3B81827E).
+	</p>
+
+	<p>
+	  See more on the <a href="info.html">info page</a>.
+	</p>
+
+	<h3>Contribute</h3>
+	<p>
+	  There are several ways you
+	  can <a href="help.html">contribute to the Heimdal
+	  project</a>.  See also
+	  the <a href="sources.html">development page</a> for
+	  change logs and source repository information.
+	</p>
+
+	<h3>Slides and presentations</h3>
+	<p>
+	  Over the years we have done some presentation, here is a sample of them:
+	</p>
+	<ul>
+	  <li>Autumn European AFS &amp; Kerberos Conference 2011
+	    <a href="ref/heimdal-bpw-2011e.pdf">pdf</a>
+	  </li>
+
+	  <li>AFS and Kerberos BPW 2011
+	    <a href="ref/heimdal-bpw-2011.pdf">pdf</a>
+	  </li>
+
+	  <li>AFS and Kerberos BPW 2010
+	    <a href="ref/heimdal-bpw-2010.pdf">pdf</a>
+	  </li>
+
+	  <li>AFS and Kerberos BPW 2009
+	    <a href="ref/heimdal-bpw-2009.pdf">pdf</a>
+	  </li>
+	  
+	  <li>AFS and Kerberos BPW 2008
+	    <a href="http://www.youtube.com/v/O09fS1uBsTM">video</a> <a href="ref/heimdal-bpw-2008.pdf">pdf</a>
+	  </li>
+	  
+	</ul>
+
+
+    </middle>
+
+    <right>
+
+      <roundedbox>
+	<download-last-release-version/>
+      </roundedbox>
+	
+      <roundedbox>
+	<a href="compile.html">Build instructions</a>
+      </roundedbox>
+
+      <h3>Binaries</h3>
+      <p>
+	<a href="binaries.html">Binaries</a> for Windows and Mac.
+      </p>
+
+      <h3>Last release</h3>
+      <p>
+	Heimdal last release was done
+	<last-release-date/>
+      </p>
+      
+      <h3>Security advisories</h3>
+      The following security advisories have been issued:
+      
+      <advisories/>
+      
+    </right>
+  </three>
+
+  <footer/>
+
+</doc>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+  <header>
+    <title>Heimdal binaries</title>
+    <text>Binaries</text>
+  </header>
+
+  <nav/>
+
+  <one>
+    <content>
+
+      <h2>Binary distributions</h2>
+
+      <toc/>
+
+      <h3 link="win">Windows</h3>
+      <distribution>
+	<name>Windows</name>
+	<description>
+	  Windows installers are available at Secure Endpoints website: 
+	  <a href="https://www.secure-endpoints.com/heimdal/">https://www.secure-endpoints.com/heimdal/</a>
+	</description>
+      </distribution>
+
+      <h3 link="mac">MacOS X</h3>
+      <distribution>
+	<name>MacOS X</name>
+	<description>
+	  Mac OS X disk image (.dmg file) with and pkg installer is
+	  create for each release and is distributed in the 
+	  <a href="http://www.h5l.org/dist/src/">main ftp area</a>
+	  just next to the source code.
+	</description>
+      </distribution>
+
+      <h3 link="centos">RHEL5/Centos 5</h3>
+      <distribution>
+	<name>RHEL5/Centos 5</name>
+	<description>
+
+	  Buchan Milne have built Mandriva packages he partly maintain
+	  for RHEL5/Centos 5, they are available
+	  at: <a href="http://staff.telkomsa.net/packages/rhel5/heimdal/">rhel5</a>.
+
+	</description>
+      </distribution>
+
+      <h3 link="other">Other</h3>
+
+      <p>please contribute binaries to other platforms</p>
+
+    </content>
+  </one>
+
+  <footer/>
+
+</doc>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+  <header>
+    <title>Projects ideas</title>
+    <text>Ideas on what to do</text>
+  </header>
+
+  <nav/>
+
+  <one>
+    <content>
+
+<p>
+  This is a list of projects of ideas that might spark off ideas on to
+  what to work on.
+</p>
+
+      <h3>
+	Crypto work
+      </h3>
+
+      <p>
+	<ul>
+	  <li>Implement EC for NIST standardize curves.</li>
+	  <li>Implement SHA-512.</li>
+	  <li>Optimize the SHA-2 generation of digest functions.</li>
+	</ul>
+      </p>
+
+      <p>
+	For more information, please contact
+	<a href="email:lha@h5l.org">lha@h5l.org</a>.
+      </p>
+      
+    </content>
+  </one>
+  
+  <footer/>
+  
+</doc>
+
+

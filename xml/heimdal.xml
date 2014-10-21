@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<software>
+
+  <!---
+    - Releases section
+    -->
+
+  <releases>
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.0a</version>
+      <date>1997-07-17</date>
+      <deprecated-release/>
+      <major-changes>
+	<change>
+	  First public release of Heimdal. First commit was done
+	  1996, March 17.
+	</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.6</version>
+      <date>2003-05-12</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2006-08-08"/>
+	<vulnerability date="2006-02-06"/>
+	<vulnerability date="2005-06-20"/>
+	<vulnerability date="2005-04-20"/>
+	<vulnerability date="2004-09-13"/>
+	<vulnerability date="2004-05-06"/>
+	<vulnerability date="2004-04-01"/>
+      </vulnerabilities>
+
+      <major-changes>
+	<change>
+	  The DES3 GSS-API mechanism has been changed to
+	  inter-operate with other GSSAPI implementations. See man
+	  page for gssapi(3) how to turn on generation of correct
+	  MIC messages. Next major release of heimdal will
+	  generate correct MIC by default.
+	</change>
+	<change>More complete GSS-API support</change>
+	<change>
+	  Better AFS support: kdc (524) supports 2b; 524 in kdc
+	  and AFS support in applications no longer requires
+	  Kerberos 4 libs
+	</change>
+	<change>
+	  Kerberos 4 support in kdc defaults to turned off
+	  (includes ka and 524)
+	</change>
+	<change>Other bug fixes</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.6.1</version>
+      <date>2004-04-01</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2006-08-08"/>
+	<vulnerability date="2006-02-06"/>
+	<vulnerability date="2005-06-20"/>
+	<vulnerability date="2005-04-20"/>
+	<vulnerability date="2004-09-13"/>
+	<vulnerability date="2004-05-06"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>Fixed ARCFOUR suppport</change>
+	<change>Cross realm vulnerability</change>
+	<change>kdc: fix denial of service attack</change>
+	<change>
+	  kdc: stop clients from renewing tickets into the future
+	</change>
+	<change>bug fixes</change>
+      </major-changes>
+    </release>
+
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.6.2</version>
+      <date>2004-05-06</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2006-08-08"/>
+	<vulnerability date="2006-02-06"/>
+	<vulnerability date="2005-06-20"/>
+	<vulnerability date="2005-04-20"/>
+	<vulnerability date="2004-09-13"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>
+	  Fix possible buffer overrun in v4 kadmin (which now
+	  defaults to off)
+	</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.6.3</version>
+      <date>2004-09-13</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2006-08-08"/>
+	<vulnerability date="2006-02-06"/>
+	<vulnerability date="2005-06-20"/>
+	<vulnerability date="2005-04-20"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>fix vulnerabilities in ftpd</change>
+	<change>support for linux AFS /proc "syscalls"</change>
+	<change>
+	  support for RFC3244 (Windows 2000 Kerberos Change/Set
+	  Password) in kpasswdd
+	</change>
+	<change>fix possible KDC denial of service</change>
+	<change>bug fixes</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.6.4</version>
+      <date>2005-04-20</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2006-08-08"/>
+	<vulnerability date="2006-02-06"/>
+	<vulnerability date="2005-06-20"/>
+	<vulnerability date="2005-04-20"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>fix vulnerabilities in telnet</change>
+	<change>
+	  rshd: encryption without a separate error socket should now
+	  work
+	</change>
+	<change>
+	  telnet now uses appdefaults for the encrypt and
+	  forward/forwardable settings
+	</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.6.5</version>
+      <date>2005-04-20</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2006-08-08"/>
+	<vulnerability date="2006-02-06"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>fix vulnerabilities in telnetd</change>
+	<change>unbreak Kerberos 4 and kaserver</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.7</version>
+      <date>2005-04-20</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2006-08-08"/>
+	<vulnerability date="2006-02-06"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>Support for KCM, a process based credential cache</change>
+	<change>Support CCAPI credential cache</change>
+	<change>SPNEGO support</change>
+	<change>AES (and the GSS-API conterpart, CFX) support</change>
+	<change>Adding new and improve old documentation</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.7.1</version>
+      <date>2005-08-14</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2006-02-06"/>
+	<vulnerability date="2006-08-08"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>Bugfixes</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.6.6</version>
+      <date>2006-02-06</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2006-08-08"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>
+	  Fix security problem in rshd that enable an attacker to overwrite
+	  and change ownership of any file that root could write.
+	</change>
+	<change>
+	  Fix a DOS in telnetd. The attacker could force the server to
+	  crash in a NULL de-reference before the user logged in,
+	  resulting in inetd turning telnetd off because it forked too
+	  fast.
+	</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.7.2</version>
+      <date>2006-02-06</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2010-05-27"/>
+	<vulnerability date="2006-08-08"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>
+	  Fix security problem in rshd that enable an attacker to
+	  overwrite and change ownership of any file that root could
+	  write.
+	</change>
+	<change>
+	  Fix a DOS in telnetd. The attacker could force the server to
+	  crash in a NULL de-reference before the user logged in,
+	  resulting in inetd turning telnetd off because it forked too
+	  fast.
+	</change>
+	<change>
+	  Make gss_acquire_cred(GSS_C_ACCEPT) check that the requested
+	  name exists in the keytab before returning success. This
+	  allows servers to check if its even possible to use GSSAPI.
+	</change>
+	<change>
+	  Fix receiving end of token delegation for GSS-API. It still
+	  wrongly uses subkey for sending for compatibility reasons,
+	  this will change in 0.8.
+	</change>
+	<change>
+	  telnetd, login and rshd are now more verbose in logging
+	  failed and successful logins.
+	</change>
+      </major-changes>
+    </release>
+
+
+    <release>
+      <name>Heimdal</name>
+      <version>0.8</version>
+      <date>2007-04-13</date>
+      <deprecated-release/>
+      <major-changes>
+	<change>PK-INIT support.</change>
+	<change>HDB extensions support, used by PK-INIT.</change>
+	<change>New ASN.1 compiler.</change>
+	<change>GSS-API mechglue from FreeBSD.</change>
+	<change>Updated SPNEGO to support RFC4178.</change>
+	<change>
+	  Support for Cryptosystem Negotiation Extension (RFC 4537).
+	</change>
+	<change>
+	  A new X.509 library (hx509) and related crypto functions.
+	</change>
+	<change>
+	  A new ntlm library (heimntlm) and related crypto functions.
+	</change>
+	<change>
+	  Updated the built-in crypto library with bignum support
+	  using imath, support for RSA and DH and renamed it to
+	  libhcrypto.
+	</change>
+	<change>
+	  Subsystem in the KDC, digest, that will perform the digest
+	  operation in the KDC, currently supports: CHAP, MS-CHAP-V2, SASL
+	  DIGEST-MD5 NTLMv1 and NTLMv2.
+	</change>
+	<change>
+	  KDC will return the "response too big" error to force TCP retries
+	  for large (default 1400 bytes) UDP replies.  This is common for
+	  PK-INIT requests.
+	</change>
+	<change>Libkafs defaults to use 2b tokens.</change>
+	<change>Default to use the API cache on Mac OS X.</change>
+	<change>
+	  krb5_kuserok() also checks ~/.k5login.d directory for acl
+	  files, see manpage for krb5_kuserok for description.
+	</change>
+	<change>
+	  Many, many, other update to code and info manual and manual pages.
+	</change>
+	<change>Bug fixes.</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.0</version>
+      <date>2007-07-17</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2010-03-21"/>
+	<vulnerability date="2010-05-27"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>Add gss_pseudo_random() for mechglue and krb5.</change>
+	<change>
+	  Make session key for the krbtgt be selected by the best
+	  encryption type of the client.
+	</change>
+	<change>
+	  Better interoperability with other PK-INIT implementations.
+	</change>
+	<change>
+	  Inital support for Mac OS X Keychain for hx509.
+	</change>
+	<change>
+	  Alias support for inital ticket requests.
+	</change>
+	<change>
+	  Add symbol versioning to selected libraries on platforms
+	  that uses GNU link editor: gssapi, hcrypto, heimntlm, hx509,
+	  krb5, and libkdc.
+	</change>
+	<change>
+	  New version of imath included in hcrypto.
+	</change>
+	<change>Fix memory leaks.</change>
+	<change>Bug fixes.</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.0.1</version>
+      <date>2007-08-08</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2010-03-21"/>
+	<vulnerability date="2010-05-27"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>Serveral bug fixes to iprop.</change>
+	<change>Make work on platforms without dlopen.</change>
+	<change>Bug fixes.</change>
+	<change>Add RFC3526 modp group14 as default.</change>
+	<change>
+	  Handle [kdc] database = { } entries without realm = stanzas.
+	</change>
+	<change>Make krb5_get_renewed_creds work.</change>
+	<change>Make kaserver preauth work again.</change>
+	<change>Bug fixes.</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.0.2</version>
+      <deprecated-release/>
+      <date>2007-12-15</date>
+      <vulnerabilities>
+	<vulnerability date="2010-03-21"/>
+	<vulnerability date="2010-05-27"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>Many bugfixes.</change>
+	<change>Ubuntu packages.</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.1</version>
+      <date>2008-01-24</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2010-03-21"/>
+	<vulnerability date="2010-05-27"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>Read-only PKCS11 provider built-in to hx509.</change>
+	<change>Documentation for hx509, hcrypto and ntlm libraries
+	  improved.</change>
+	<change>Better compatibilty with Windows 2008 Server
+	  pre-releases and Vista.</change>
+	<change>Mac OS X 10.5 support for native credential
+	  cache.</change>
+	<change>Provide pkg-config file for Heimdal
+	  (heimdal-gssapi.pc).</change>
+	<change>Bug fixes.</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.2</version>
+      <date>2008-05-22</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2010-03-21"/>
+	<vulnerability date="2010-05-27"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>[HEIMDAL-10] - Follow-up on bug report for SEGFAULT in gss_display_name/gss_export_name when using SPNEGO</change>
+	<change>[HEIMDAL-15] - Re: [Heimdal-bugs] potential bug in Heimdal 1.1</change>
+	<change>[HEIMDAL-17] - Remove support for depricated [libdefaults]capath</change>
+	<change>[HEIMDAL-52] - hdb overwrite aliases for db databases</change>
+	<change>[HEIMDAL-54] - Two issues which affect credentials delegation</change>
+	<change>[HEIMDAL-58] - sockbuf.c calls setsockopt with bad args</change>
+	<change>[HEIMDAL-62] - Fix printing of sig_atomic_t</change>
+	<change>[HEIMDAL-87] - heimdal 1.1 not building under cygwin in hcrypto</change>
+	<change>[HEIMDAL-105] - rcp: sync rcp with upstream bsd rcp codebase</change>
+	<change>[HEIMDAL-117] - Use libtool to detect symbol versioning (Debian Bug#453241)</change>
+	<change>[HEIMDAL-67] - Fix locking and store credential in atomic writes in the FILE credential cache</change>
+	<change>[HEIMDAL-106] - make compile on cygwin again</change>
+	<change>[HEIMDAL-107] - Replace old random key generation in des module and use it with RAND_ function instead</change>
+	<change>[HEIMDAL-115] - Better documentation and compatibility in hcrypto in regards to OpenSSL</change>
+	<change>[HEIMDAL-3] - pkinit alg agility PRF test vectors</change>
+	<change>[HEIMDAL-14] - Add libwind to Heimdal</change>
+	<change>[HEIMDAL-16] - Use libwind in hx509</change>
+	<change>[HEIMDAL-55] - Add flag to krb5 to not add GSS-API INT|CONF to the negotiation</change>
+	<change>[HEIMDAL-74] - Add support to report extended error message back in AS-REQ to support windows clients</change>
+	<change>[HEIMDAL-116] - test pty based application (using rkpty)</change>
+	<change>[HEIMDAL-120] - Use new OpenLDAP API (older deprecated)</change>
+	<change>[HEIMDAL-63] - Dont try key usage KRB5_KU_AP_REQ_AUTH for TGS-REQ. This drop compatibility with pre 0.3d KDCs.</change>
+	<change>[HEIMDAL-64] - kcm: first implementation of kcm-move-cache</change>
+	<change>[HEIMDAL-65] - Failed to compile with --disable-pk-init</change>
+	<change>[HEIMDAL-80] - verify that [VU#162289]: gcc silently discards some wraparound checks doesn't apply to Heimdal</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.2.1</version>
+      <date>2008-08-19</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2010-03-21"/>
+	<vulnerability date="2010-05-27"/>
+	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2012-01-11"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>[HEIMDAL-147] - Heimdal 1.2 not compiling on Solaris</change>
+	<change>[HEIMDAL-151] - Make canned tests work again after cert expired</change>
+	<change>[HEIMDAL-152] - iprop test: use full hostname to avoid realm resolving errors</change>
+	<change>[HEIMDAL-153] - ftp: Use the correct length for unmap, msync</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.3.0</version>
+      <date>2009-11-15</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2010-03-21"/>
+	<vulnerability date="2010-05-27"/>
+	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2012-01-11"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>Partial support for MIT kadmind rpc protocol in kadmind</change>
+        <change>Better support for finding keytab entries when using SPN aliases in the KDC</change>
+        <change>Support BER in ASN.1 library (needed for CMS)</change>
+        <change>Support decryption in Keychain private keys</change>
+        <change>Support for new sqlite based credential cache</change>
+        <change>Try both KDC referals and the common DNS reverse lookup in GSS-API</change>
+        <change>Fix the KCM to not leak resources on failure</change>
+        <change>Add IPv6 support to iprop</change>
+        <change>Support localization of error strings in</change>
+        <change>kinit/klist/kdestroy and Kerberos library</change>
+        <change>Remove Kerberos 4 support in application (still in KDC)</change>
+        <change>Deprecate DES</change>
+        <change>Support i18n password in windows domains (using UTF-8)</change>
+        <change>More complete API emulation of OpenSSL in hcrypto</change>
+        <change>Support for ECDSA and ECDH when linking with OpenSSL</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.3.1</version>
+      <date>2009-11-20</date>
+      <deprecated-release/>
+      <major-changes>
+	<change>Make work with OpenLDAPs krb5 overlay</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.3.2</version>
+      <date>2010-03-21</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2010-03-21"/>
+	<vulnerability date="2010-05-27"/>
+	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2012-01-11"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>Don't mix length when clearing hmac (could memset too much)</change>
+	<change>More paranoid underrun checking when decrypting packets</change>
+	<change>Check the password change requests and refuse to answer empty packets</change>
+	<change>Build on OpenSolaris 10</change>
+	<change>Renumber AD-SIGNED-TICKET since it was stolen</change>
+	<change>Don't cache /dev/*random file descriptor, it doesn't get unloaded</change>
+	<change>Make C++ safe</change>
+	<change>Misc warnings</change>
+      </major-changes>
+    </release>
+
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.3.3</version>
+      <date>2010-05-27</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2010-05-27"/>
+	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2012-01-11"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>Check the GSS-API checksum exists before trying to use it</change>
+	<change>kdc: check NULL pointers before dereference them</change>
+	<change>Bugfixes</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.4</version>
+      <date>2010-09-14</date>
+      <deprecated-release/>
+      <major-changes>
+	<change>Support for reading MIT database file directly</change>
+	<change>KCM is polished up and now used in production</change>
+	<change>NTLM first class citizen, credentials stored in KCM</change>
+	<change>Table driven ASN.1 compiler, smaller!, not enabled by default</change>
+	<change>Native Windows client support</change>
+	<change>Bugfixes</change>
+      </major-changes>
+      <vulnerabilities>
+	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2012-01-11"/>
+      </vulnerabilities>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.5</version>
+      <date>2011-09-20</date>
+      <major-changes>
+	<change>Support GSS name extensions/attributes</change>
+	<change>SHA512 support</change>
+	<change>No Kerberos 4 support</change>
+	<change>Basic support for MIT Admin protocol (SECGSS flavor) in kadmind (extract keytab)</change>
+	<change>Replace editline with libedit</change>
+	<change>Bugfixes</change>
+      </major-changes>
+      <vulnerabilities>
+	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2012-01-11"/>
+      </vulnerabilities>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.5.1</version>
+      <date>2011-10-02</date>
+      <major-changes>
+	<change>Fix building on Solaris, requires c99</change>
+	<change>Fix building on Windows</change>
+	<change>Build system updates</change>
+	<change></change>
+      </major-changes>
+      <vulnerabilities>
+	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2012-01-11"/>
+      </vulnerabilities>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>1.5.2</version>
+      <date>2012-01-11</date>
+      <vulnerabilities>
+	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2012-01-11"/>
+      </vulnerabilities>
+      <major-changes>
+	<change>Security fixes</change>
+      </major-changes>
+    </release>
+
+
+  </releases>
+
+  <!---
+    - Vulnerability section
+    -->
+
+  <vulnerabilities>
+
+    <vulnerability date="2005-04-20">
+      <short>telnet vulnerabilities</short>
+      <description>
+	<p>
+	  The telnet client program in Heimdal has buffer overflows in the
+	  functions slc_add_reply() and env_opt_add(), which may lead to remote
+	  code execution.
+	</p>
+	<p>
+	  The only workaround for this bug is to not use the telnet client.
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2004-09-13">
+      <short>ftpd root escalation</short>
+      <cve>CVE-2004-0794</cve>
+      <description>
+	<p>
+	  A number of problems in ftpd may be used to get root access
+	  from an ftp session. Przemyslaw Frasunek has written
+	  a <a href="http://www.frasunek.com/lukemftpd.txt">technical
+	  description</a> (detailing tnftpd, but the principle is the
+	  same).
+	</p>
+	<p>
+	  The only workaround for this bug is to disable ftpd.
+	</p>
+	<p>
+	  See also Gentoo bug
+	  <a href="http://bugs.gentoo.org/show_bug.cgi?id=61412">61412</a>
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2004-05-06">
+      <short>Kerberos 4 buffer overrun in Heimdal kadmin</short>
+      <cve>CAN-2004-0434</cve>
+      <description>
+	<p>
+	  All releases prior to 0.6.2 have a possible buffer overrun problem in
+	  the Kerberos 4 kadmin compatibility module. It would probably be
+	  possible to implement a remote exploit for this, depending on
+	  architechture.
+	</p>
+	<p>
+	  0.6.2 fixes this problem, as well as making Kerberos 4 kadmin default
+	  off.
+	</p>
+	<p>
+	  We suggest that you turn off Kerberos 4 kadmin, with the
+	  <tt>--no-kerberos4</tt> option to kadmind. If you have a good reason
+	  to still use the Kerberos 4 kadmin protocol, you should still do this
+	  before an upgrade to 0.6.2.
+	</p>
+	<p>
+	  To check for a vulnerable kadmind you have to check for version and
+	  also whether it was built with Kerberos 4 support at all:
+	</p>
+	<pre class="example">
+$ /usr/heimdal/libexec/kadmind --version
+kadmind (Heimdal 0.6.1)
+Copyright 1999-2004 Kungliga Tekniska Hgskolan
+Send bug-reports to heimdal-bugs@pdc.kth.se
+$ /usr/heimdal/libexec/kadmind --help
+Usage: kadmind [-dhv] [--config-file=file] [-c file] [--key-file=file] [-k file]
+[--keytab=keytab] [--realm=realm] [-r realm] [--check-library=library]
+[--check-function=function] [--debug] [--no-kerberos4] [--ports=port]
+[-p port] [--help] [--version] 
+-c file, --config-file=file location of config file
+-k file, --key-file=file    location of master key file
+--keytab=keytab             what keytab to use
+-r realm, --realm=realm     realm to use
+--check-library=library     library to load password check function from
+--check-function=function   password check function to load
+-d, --debug                 enable debugging
+--no-kerberos4              don't respond to kerberos 4 requests
+-p port, --ports=port       ports to listen to
+	</pre>
+	<p>
+	  Binaries without Kerberos 4 support will not show the
+	  <tt>--no-kerberos4</tt> option.
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2004-04-01">
+      <short>Cross-realm trust vulnerability in Heimdal</short>
+      <cve>CAN-2004-0371</cve>
+      <description>
+	<p>
+	  All releases prior to 0.6.1 and 0.5.3 have a cross-realm vulnerability
+	  allowing someone with control over a realm to impersonate anyone in
+	  the cross-realm trust path.
+	</p>
+	<p>
+	  0.6.1 and 0.5.3 performs proper consistency checks on cross-realm
+	  requests, as well as allowing for better control over transit checks.
+	</p>
+	<p>
+	  If you are running a vulnerable KDC version and have established
+	  cross-realm trust with anyone, we recommend that you disable this
+	  trust and then upgrade to 0.6.1.
+	</p>
+	<p>
+	  Too see if you have any cross-realm trust enabled you can list all
+	  krbtgt principals in the database:
+	  <pre class="example">
+kadmin&gt; get -t krbtgt/*
+krbtgt/&lt;MY.REALM&gt;@&lt;MY.REALM&gt;
+krbtgt/&lt;MY.REALM&gt;@&lt;OTHER.REALM&gt;
+krbtgt/&lt;OTHER.REALM&gt;@&lt;MY.REALM&gt;
+	  </pre>
+	  If you have any <tt>&lt;OTHER.REALM&gt;</tt> variants, you can
+	  temporarily disable them with:
+	  <pre class="example">
+kadmin&gt; mod krbtgt/&lt;MY.REALM&gt;@&lt;OTHER.REALM&gt;
+Max ticket life [unlimited]:
+Max renewable life [unlimited]:
+Principal expiration time [never]:
+Password expiration time [never]:
+Attributes []:+disallow-all-tix
+	  </pre>
+	  You have to repeat this for all such principals as there is no easy
+	  way to automate this. If you have a huge number to update, you will
+	  probably have to dump the database, edit the dump, and reload.
+	</p>
+	<p>
+	  After upgrading the KDC you can reenable them with:
+	  <pre class="example">
+kadmin&gt; mod krbtgt/&lt;MY.REALM&gt;@&lt;OTHER.REALM&gt;
+Max ticket life [unlimited]:
+Max renewable life [unlimited]:
+Principal expiration time [never]:
+Password expiration time [never]:
+Attributes [disallow-all-tix]:-disallow-all-tix
+	  </pre>
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2005-06-20">
+      <short>
+	telnetd vulnerabilities
+      </short>
+      <description>
+	<p>
+	  The telnetd server program in Heimdal has buffer overflows in
+	  the function getterminaltype, which may lead to remote code
+	  execution.
+	</p>
+	<p>
+	  The only workaround for this bug is to not use the telnetd
+	  server program.
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2006-02-06">
+      <short>
+	rshd privilege escalation vulnerability
+      </short>
+      <description>
+	<p>
+	  The rshd server in Heimdal has a privilege escalation bug when storing
+	  forwarded credentials. The code allowes a user to overwrite a file
+	  with its credential cache, and get ownership of the file.
+	</p>
+	<p>
+	  The only workaround for this bug is to disable the rshd server
+	  program.
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2006-08-08">
+      <short>
+	multiple local privilege escalation vulnerabilities
+      </short>
+      <cve>CVE-2006-3083</cve>
+      <cve>CVE-2006-3084</cve>
+      <description>
+	<p>
+	  This problem applies to systems where setuid/seteuid call
+	  call fail due to resource exhaustion. One operating system
+	  that is true is Linux. The programs that this this problem
+	  applies to are ftpd and rcp. The problem only apply to rcp
+	  if it installed setuid root (not done by default).
+	</p>
+	<p>
+	  Patch
+	  (<a href="ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.7.2-setuid-patch.txt">heimdal-0.7.2-setuid-patch</a>)
+	  for Heimdal 0.7.2 fixes this problem.
+	</p>
+	<p>
+	  One workaround is to make sure set{e,}uid doesn't fail. Also
+	  disabling ftpd and removing the setuid bit from rcp will
+	  solve the problem.
+	</p>
+	<p>
+	  Thanks to Tom Yu at MIT and Michael Calmer and Marcus
+	  Meissner at SUSE for tell us about the problem.  Either of
+	  CVE-2006-3083 or CVE-2006-3084 describes this problems.
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2010-03-21">
+      <short>
+	Length checking wrong
+      </short>
+      <description>
+	<p>
+	  The decryption functions didn't do length checking
+	  correctly, which can result in crashes or other problems.
+	</p>
+	<p>
+	  The HMAC code cleared too much memory, this can result in
+	  crashes or other problems.
+	</p>
+	<p>
+	  Thanks to Tom Yu of MIT and Andrew Tridge of Samba
+	  for tell us about the problem. 
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2010-05-27">
+      <short>
+	Tries to follow NULL pointers in KDC and GSS-API Kerberos
+	acceptor (server).
+      </short>
+      <cve>CVE-2010-1321</cve>
+      <description>
+	<p>
+	  There OPTIONAL values in Kerberos protocols, in the ASN.1
+	  encoder they are encoded as a pointer to a structure. When
+	  the peer is not sending the OPTIONAL argument, the pointer
+	  set to NULL instead of a pointer to a structure.
+	</p>
+	<p>
+	  In two places we failes to check for NULL pointer before
+	  trying to de-reference the NULL pointer, which results in
+	  crashing.
+	</p>
+	<p>
+	  Thanks to Tom Yu of MIT Kerberos for tell us about the
+	  problem.
+	</p>
+      </description>
+
+    </vulnerability>
+
+    <vulnerability date="2012-01-10">
+      <short>telnet vulnerability client and server</short>
+      <cve>CVE-2011-4862</cve>
+      <description>
+	<p>
+	  Buffer overrun by copying untrusted data from network stack in libtelnet
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2012-01-11">
+      <short>libkrb5 checksum - denial of serice</short>
+      <description>
+	<p>
+	  By chooice a specific PAC, the attacker and cause a
+	  overwriting the heap with data the attacker don't control.
+	</p>
+      </description>
+    </vulnerability>
+
+  </vulnerabilities>
+
+</software>

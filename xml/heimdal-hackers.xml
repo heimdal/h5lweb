@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+  <header>
+    <title>Heimdal hackers</title>
+    <text>Who is hacking on Heimdal</text>
+  </header>
+
+  <nav/>
+
+  <one>
+    <content>
+
+      <h3>
+	Heimdal hackers that can commit stuff
+      </h3>
+
+      <ul>
+	<li>
+	  Assar Westerlund
+	</li>
+	<li>
+	  Johan Danielsson
+	</li>
+	<li>
+	  <a href="http://people.su.se/~lha/">Love Hörnquist Åstrand</a>
+	</li>
+	<li>
+	  Jacques Vidrine
+	</li>
+	<li>
+	  Luke Howard
+	</li>
+	<li>
+	  Ken'ichi Kamada
+	</li>
+	<li>
+	  Roland Dowdeswell
+	</li>
+      </ul>
+
+    </content>
+  </one>
+  
+  <footer/>
+  
+</doc>

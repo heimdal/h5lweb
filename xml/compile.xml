@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="heimdal.xml"/>
+
+  <header>
+    <title>Building Heimdal</title>
+    <text>Building Heimdal</text>
+  </header>
+
+  <nav/>
+
+  <one>
+    <content>
+      
+      <h2>Building Heimdal</h2>
+
+      <toc/>
+
+      <h3 link="build">Building and Installing</h3>
+
+      <p>
+	Heimdal uses GNU Autoconf to configure for specific hosts, and GNU
+	Automake to manage makefiles. If this is new to you, the short
+	instruction is to run the configure script in the top level
+	directory, and when that finishes make.
+      
+	<pre>
+$ ./configure
+$ make	  
+	</pre>
+      </p>
+
+      <p>
+	If you want to build the distribution in a different
+	directory from the source directory, you will need a make
+	that implements VPATH correctly, such as GNU make.
+      </p>
+      
+      <p>
+	You will need to build the distribution:
+      </p>
+      
+      <ul>
+	<li>A compiler that supports a ``loose'' ANSI C mode, such as 
+	  <a href="http://gcc.gnu.org/">gcc</a> or <a href="http://clang.llvm.org/">clang</a></li>
+	<li>lex or flex</li>
+	<li>awk</li>
+	<li>yacc or bison</li>
+	<li>a socket library</li>
+	<li>Berkeley DB or any of the BDB replacements for building the server side. NDBM on solaris doesn't support large data, so there is no write support for NDBM any longer.</li>
+      </ul>
+
+      <p>
+	When everything is built, you can install by doing
+	<pre>
+$ make install
+	</pre>
+	The default location for installation is usr/heimdal,
+	but this can be changed by running configure with --prefix argument.
+	
+	<pre>
+$ ./configure --prefix=/some/other/place
+	</pre>
+      </p>
+      
+      <p>
+	If you need to change the default behaviour, configure understands the
+	following options:
+      </p>
+      
+      <ul>
+	<li>
+	  --without-berkeley-db
+	  <p>
+	    DB is preferred before NDBM, but if you for some reason
+	    want to use NDBM instead, you can use this option.
+	  </p>
+	</li>
+	
+	<li>
+	  --disable-otp
+	  <p>
+	    By default some of the application programs will build
+	    with support for one-time passwords (OTP).  Use this
+	    option to disable that support.
+	  </p>
+	</li>
+	
+	<li>
+	  --with-readline=dir
+	  <p>
+	    Gives the path for the GNU Readline library, which will
+	    be used in some programs. If no readline library is
+	    found, the (simpler) editline library will be used
+	    instead.
+	  </p>
+	</li>
+	
+	<li>
+	  --with-hesiod=dir
+	  <p>
+	    Enables hesiod support in push.
+	  </p>
+	</li>
+
+	<li>
+	  --without-ipv6
+	  <p>
+	    Disable the IPv6 support.
+	  </p>
+	</li>
+	
+	<li>
+	  --with-openldap
+	  <p>
+	    Compile Heimdal with support for storing the database in
+	    LDAP.  Requires <a href="http://www.openldap.org/">OpenLDAP</a>.
+	  </p>
+	</li>
+	
+	<li>
+	  --enable-bigendian
+	  or
+	  --enable-littleendian
+	  <p>
+	    Normally, the build process will figure out by itself if
+	    the machine is big or little endian.  It might fail in
+	    some cases when cross-compiling.  If it does fail to
+	    figure it out, use the relevant of these two options.
+	  </p>
+	</li>
+	
+	<li>
+	  --disable-mmap
+	  <p>
+	    Do not use the mmap system call.  Normally, configure
+	    detects if there is a working mmap and it is only used
+	    if there is one.  Only try this option if it fails to
+	    work anyhow.
+	  </p>
+	</li>
+      </ul>
+
+      
+      <h3 link="cross">Cross compiling Heimdal NetBSD/evbarm on NetBSD/i386</h3>
+      <p>
+	
+	This description
+	uses <a href="http://www.NetBSD.org/">NetBSD</a> as a guide to
+	cross compile Heimdal. We use NetBSD to show how do do it
+	because NetBSD is very friendly to cross compilers.
+      </p>
+
+      <p>
+	We assume you are running as root on a i386 installation for
+	simplicity.
+      </p>
+
+      <ul>
+	<li>
+	  Download NetBSD evbarm packages for base.tgz and comp.tgz
+	  and unpack them:
+	  <pre>
+$ mkdir /root/evbarm
+$ for a in base comp ; do \ 
+    ftp http://ftp.netbsd.org/pub/NetBSD/NetBSD-5.0.1/evbarm/binary/sets/$a.tgz; \
+    $ tar zxCf /root/evbarm $a.tgz ; \
+  done
+	  </pre>
+	</li>
+	<li>
+	  Download NetBSD compiler source packages: src.tgz, gnusrc.tgz, sharesrc.tgz, syssrc.tgz
+	  <pre>
+$ for a in src gnusrc sharesrc syssrc ; do \ 
+    ftp http://ftp.netbsd.org/pub/NetBSD/NetBSD-5.0.1/source/sets/$a.tgz; \
+    tar xvCf / $a.tgz; \
+  done
+	  </pre>
+	</li>
+	<li>
+	  Build cross compiler:
+	  <pre>
+$ mkdir /usr/obj
+$ cd /usr/src
+$ ./build.sh -m evbarm tools
+	  </pre>
+	</li>
+	<li>
+	  Add tools to PATH
+	  <pre>
+$ PATH=/usr/src/tooldir.NetBSD-5.0.1-i386/bin:$PATH
+	  </pre>
+	</li>
+	<li>
+	  Get Heimdal source
+	  <pre>
+$ cd
+$ git clone git://svn.h5l.org/heimdal.git
+$ cd heimdal
+$ autoreconf -f -i
+	  </pre>
+	</li>
+	<li>
+	  Build native Heimdal, builds needed tools
+	  <pre>
+$ mkdir native
+$ cd native
+$ ../configure --prefix=/usr/heimdal
+$ make
+$ make install
+$ cd ..
+$ cp /usr/heimdal/bin/compile_et /usr/heimdal/libexec/heimdal/
+	  </pre>
+	</li>
+	<li>
+	  <p>
+	    Cross compile Heimdal and install.
+	  </p>
+	  <p>
+	    The -XCClinker and perl snipet is to convince libtool to
+	    cross compile propperly.
+	  </p>
+	  <pre>
+$ mkdir evbarm
+$ cd evbarm
+$ ../configure --disable-shared --prefix=/usr/heimdal --host=arm--netbsdelf \
+    --with-cross-tools=/usr/heimdal/libexec/heimdal
+    CPPFLAGS='-nostdinc -isystem /root/evbarm/usr/include' \
+    LDFLAGS='-XCClinker -B/root/evbarm/usr/lib'
+$ perl -pi -e 's@(^sys_lib_search_path .*)"$\1 /root/evbarm/usr/lib"' libtool
+$ make
+$ make install DESTDIR=/root/evbarm
+$ file /root/evbarm/usr/heimdal/bin/kinit
+	  </pre>
+	</li>
+      </ul>
+
+      <a href="cross-compile.png"><img src="cross-compile.png"/></a>
+
+    </content>
+  </one>
+  
+  <footer/>
+  
+</doc>

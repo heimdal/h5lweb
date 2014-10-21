@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="heimdal.xml"/>
+
+  <header>
+    <title>Heimdal releases</title>
+    <text>Heimdal releases</text>
+  </header>
+
+  <nav/>
+
+  <one>
+    <content>
+      <p>
+	<release-content/>
+      </p>
+    </content>
+  </one>
+  
+  <footer/>
+  
+</doc>

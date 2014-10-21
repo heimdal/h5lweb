@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="heimdal.xml"/>
+
+  <header>
+    <title>Heimdal security advisories</title>
+    <text>Heimdal security advisories</text>
+  </header>
+
+  <nav/>
+
+  <one>
+    <content>
+      <p>
+	<advisory-content/>
+      </p>
+    </content>
+  </one>
+  
+  <footer/>
+  
+</doc>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+  <header>
+    <title>Contributions to Heimdal</title>
+    <text>You too can help!</text>
+  </header>
+
+  <nav/>
+
+  <one>
+    <content>
+
+      <h2>Helping Heimdal</h2>
+
+      <toc/>
+
+      <h3 link="help">Helping the Heimdal project</h3>
+
+      <p>
+	This page contain some information about ways you can
+	contribute to the <a href="/">Heimdal project</a>.  See also
+	the <a href="/sources.html">source code page</a> for
+	change logs and source repository information.
+      </p>
+
+      <h3 link="doc">
+	Improving the documentation
+      </h3>
+
+      <p>
+	The documentation to the Heimdal is quite good, but we can get better.
+	If you have any suggestions, don't hesitate to send text/comments to
+	<a href="mailto:heimdal-bugs@h5l.org">heimdal-bugs@h5l.org</a>.
+      </p>
+
+      <h3 link="bugs">
+	Reporting bugs
+      </h3>
+
+      <p>
+	This one is simple, if you find something, don't assume its already
+	fixed, send us a short mail about it. If you do, you might get a patch
+	back it the problem is already found, or help you'll help us make
+	Heimdal even better.
+      </p>
+
+      <p>
+	You send the bugs to
+	<a href="mailto:heimdal-bugs@h5l.org">heimdal-bugs@h5l.org</a>.
+      </p>
+
+      <h3 link="tess">
+	Adding tests to the regression suite
+      </h3>
+
+      <p>
+	When you have a bug, think (and ask us) if its possible to do
+	automated checking if that what now is broken works. This way you'll
+	make sure the bug is not reintroduced again when its fixed. It's
+	boring to report broken functionallity over and over again, so if you
+	help us with this you don't have to.
+      </p>
+
+      <p>
+	If you think this sounds like
+	<a href="#reporting_bugs">Reporting bugs</a> is because its
+	the next step after fixing a bug.  Making sure we never see it
+	again.
+      </p>
+
+      <p>
+	You send the new tests and questions to
+	<a href="mailto:heimdal-bugs@h5l.org">heimdal-bugs@h5l.org</a>.
+      </p>
+
+      <h3 link="buildbot">
+	Buildbot
+      </h3>
+
+      <p>
+	<a href="http://buildbot.h5l.org:8080/waterfall">Buildbot</a> allows
+	automated testing of Heimdal. If you can contribute cpu
+	resources, or os installation that run ON i386 in vmware to
+	build please let us know.
+      </p>
+
+      <p>
+	Software that needs to be installed: 
+
+	<ul>
+	  <li>yacc/byacc/bison</li>
+	  <li>lex/flex</li>
+	  <li>automake</li>
+	  <li>autoconf</li>
+	  <li>libtool</li>
+	  <li>makeinfo</li>
+	  <li>unzip</li>
+	  <li>buildbot</li>
+	</ul>
+      </p>
+
+
+      <h3 link="thanks">
+	Thank you
+      </h3>
+
+      <p>
+	Thank you for making Heimdal better.
+      </p>
+
+    </content>
+  </one>
+
+  <footer/>
+
+</doc>

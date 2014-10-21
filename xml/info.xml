@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+  <header>
+    <title>Heimdal communication channels</title>
+    <text>Where to find developer and users</text>
+  </header>
+
+  <nav/>
+
+  <one>
+    <content>
+
+      <h3>
+	Blog
+      </h3>
+
+      <p>
+	Progress reports and new development are reported now and then
+	on the developer <a href="http://www.h5l.org/blog/">blog</a>.
+      </p>
+
+      <h3>
+	Mailing lists
+      </h3>
+
+      <p>
+	There are two mailings lists:
+	<a href="http://list.sics.se/sympa/info/heimdal-announce">heimdal-announce</a> and
+	<a href="http://list.sics.se/sympa/info/heimdal-discuss">heimdal-discuss</a>
+	(<a href="http://www.stacken.kth.se/lists/heimdal-discuss/index.php">ml-archive</a>,
+	<a href="http://www.mail-archive.com/heimdal-discuss@sics.se/">mail-archive</a>,
+	<a href="http://news.gmane.org/gmane.comp.encryption.kerberos.heimdal.general">gmane</a>).
+      </p>
+      
+      <h3>
+	Bug reports
+      </h3>
+
+      <p>
+	Bugreports should be sent
+	to <a href="mailto:heimdal-bugs@h5l.org">heimdal-bugs@h5l.org</a>,
+	PGP key for <a href="pgp-contact.txt">security sensitive bug
+	reports</a> (key id 3B81827E). The bugs are tracked in
+	<a href="https://roundup.it.su.se/jira/browse/HEIMDAL">Heimdal's
+	JIRA</a>.
+      </p>
+
+      <h3>
+	IRC
+      </h3>
+
+      <p>
+	The developers are sometimes available on freenode's #heimdal
+	channel.
+      </p>
+
+    </content>
+  </one>
+  
+  <footer/>
+  
+</doc>
+
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="heimdal.xml"/>
+
+  <header>
+    <title>Heimdal source code</title>
+    <text>Heimdal source code</text>
+  </header>
+
+  <nav/>
+
+  <one>
+    <content>
+      
+      <h3>Download sources</h3>
+      <p>
+	The source tar files can be found on the
+	<a href="http://www.h5l.org/dist/src/">
+	  ftp site</a>.
+      </p>
+      
+      <h3>Browsing source code</h3>
+
+      <p>
+	To browse the source code you can use
+	<a href="http://repo.or.cz/w/heimdal.git">repo.or.cz</a> or
+	<a href="http://github.com/heimdal/heimdal">github</a>.
+      </p>
+
+      <h3>Heimdal git repository</h3>
+
+      <p>
+	To pull down the Heimdal git repository use the folling
+	commands.  To read more about git, read
+	the <a href="http://book.git-scm.com/">Git Community book</a>.
+      </p>
+
+      <pre class="example">
+	git clone git@github.com:heimdal/heimdal.git
+      </pre>
+
+      <h3>Heimdal master (development branch)</h3>
+      
+      <pre class="example">
+	git clone git@github.com:heimdal/heimdal.git
+	cd heimdal	
+	autoreconf -f -i
+      </pre>
+
+      <h3>Heimdal 1.5 release branch</h3>
+
+      <pre class="example">
+	git clone git@github.com:heimdal/heimdal.git
+	cd heimdal
+	git checkout -b heimdal-1-5-branch origin/heimdal-1-5-branch
+	autoreconf -f -i
+      </pre>
+
+
+    </content>
+  </one>
+  
+  <footer/>
+  
+</doc>

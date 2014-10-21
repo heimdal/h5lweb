@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+  <header>
+    <title>Heimdal logo</title>
+    <text>The Heimdal key hole logotype</text>
+  </header>
+
+  <nav/>
+
+  <one>
+    <content>
+
+      <h3>
+	The logotype
+      </h3>
+
+      <p>
+	<img src="/ref/keyhole-heimdal.png"/>
+      </p>
+
+      <p>
+	The logotype is a representation of the Kerberos protocol, the
+	two parties (client and server) on either side of the trusted
+	third party (KDC) that binds them together.
+
+	The three parts of the logotype are in the shape of key holes
+	since Kerberos uses cryptographic keys to protect the
+	exchange.
+      </p>
+
+      <h3>
+	Why?
+      </h3>
+
+      <p>
+	We choose the logo because of it uniqueness and that is was
+	easy to use as an application icon. It just not yet another
+	round icon in your Applications folder.
+      </p>
+
+      <h3>
+	Create by?
+      </h3>
+
+      <p>
+	Heimdal logotype is created by
+	<a href="http://www.carinaoscarsson.se/">Carina	Oscarsson</a>.
+      </p>
+
+
+    </content>
+  </one>
+  
+  <footer/>
+  
+</doc>
