@@ -30,8 +30,8 @@
 
       <p>
 	The documentation to the Heimdal is quite good, but we can get better.
-	If you have any suggestions, don't hesitate to send text/comments to
-	<a href="mailto:heimdal-bugs@h5l.org">heimdal-bugs@h5l.org</a>.
+	If you have any suggestions, don't hesitate to submit text/comments via
+	<a href="https://github.com/heimdal/heimdal/issues/>GitHub's Heimdal Issues page</a>.
       </p>
 
       <h3 link="bugs">
@@ -46,8 +46,8 @@
       </p>
 
       <p>
-	You send the bugs to
-	<a href="mailto:heimdal-bugs@h5l.org">heimdal-bugs@h5l.org</a>.
+	You submit the bugs via
+	<a href="https://github.com/heimdal/heimdal/issues/>GitHub's Heimdal Issues page</a>.
       </p>
 
       <h3 link="tess">
@@ -70,8 +70,8 @@
       </p>
 
       <p>
-	You send the new tests and questions to
-	<a href="mailto:heimdal-bugs@h5l.org">heimdal-bugs@h5l.org</a>.
+	You submit the new tests and questions via
+	<a href="https://github.com/heimdal/heimdal/issues/>GitHub's Heimdal Issues page</a>.
       </p>
 
       <h3 link="buildbot">
