@@ -26,11 +26,10 @@
 
       <p>
 	There are two mailings lists:
-	<a href="https://list.sics.se/sympa/info/heimdal-announce">heimdal-announce</a> and
-	<a href="https://list.sics.se/sympa/info/heimdal-discuss">heimdal-discuss</a>
-	(<a href="http://www.stacken.kth.se/lists/heimdal-discuss/index.php">ml-archive</a>,
-	<a href="http://www.mail-archive.com/heimdal-discuss@sics.se/">mail-archive</a>,
-	<a href="http://news.gmane.org/gmane.comp.encryption.kerberos.heimdal.general">gmane</a>).
+	<a href="https://www.h5l.org/mailman/listinfo/heimdal-announce">heimdal-announce</a> and
+	<a href="https://www.h5l.org/mailman/listinfo/heimdal-discuss">heimdal-discuss</a>
+	(<a href="http://www.h5l.org/pipermail/heimdal-discuss/">ml-archive</a>,
+	<a href="https://www.mail-archive.com/heimdal-discuss@h5l.org/">mail-archive</a>).
       </p>
       
       <h3>
