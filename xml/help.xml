@@ -47,7 +47,7 @@
 
       <p>
 	You submit the bugs via
-	<a href="https://github.com/heimdal/heimdal/issues/>GitHub's Heimdal Issues page</a>.
+	<a href="https://github.com/heimdal/heimdal/issues/">GitHub's Heimdal Issues page</a>.
       </p>
 
       <h3 link="tess">
@@ -71,7 +71,7 @@
 
       <p>
 	You submit the new tests and questions via
-	<a href="https://github.com/heimdal/heimdal/issues/>GitHub's Heimdal Issues page</a>.
+	<a href="https://github.com/heimdal/heimdal/issues/">GitHub's Heimdal Issues page</a>.
       </p>
 
       <h3 link="buildbot">
