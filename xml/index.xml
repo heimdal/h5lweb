@@ -107,7 +107,7 @@
 
 	<p>
 	  Bug reports can be submitted via the
-	  <a href="https://github.com/heimdal/heimdal/issues/>GitHub's Heimdal Issues page</a>.
+	  <a href="https://github.com/heimdal/heimdal/issues/">GitHub's Heimdal Issues page</a>.
 	  Security sensitive bug reports should be sent to
 	  <a href="mailto:heimdal-bugs@h5l.org">heimdal-bugs@h5l.org</a> using
 	  <a href="pgp-contact.txt">this PGP key (key id 3B81827E)</a>.
