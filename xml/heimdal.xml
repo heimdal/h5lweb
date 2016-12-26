@@ -608,6 +608,49 @@
       </major-changes>
     </release>
 
+    <release>
+      <name>Heimdal</name>
+      <version>7.1</version>
+      <date>2016-12-22</date>
+      <major-changes>
+	<change>hcrypto is now thread safe on all platforms and as
+          much as possible hcrypto now uses the operating system's
+          preferred crypto implementation ensuring that optimized
+          hardware assisted implementations of AES-NI are
+          used.
+	</change>
+	<change>
+	  RFC 6113 Generalized Framework for Kerberos
+          Pre-Authentication (FAST).
+	</change>
+	<change>
+	  Hierarchical capath support
+	</change>
+	<change>
+	   iprop has been revamped to fix a number of race conditions
+          that could lead to inconsistent replication.
+	</change>
+	<change>
+	  The KDC process now uses a multi-process model improving
+          resiliency and performance.
+	</change>
+	<change>
+	  AES Encryption with HMAC-SHA2 for Kerberos 5
+          draft-ietf-kitten-aes-cts-hmac-sha2-11
+	</change>
+	<change>
+	  Moved kadmin and ktutil to /usr/bin
+	</change>
+	<change>
+	  Stricter fcache checks (see fcache_strict_checking krb5.conf setting)
+	</change>
+	<change>
+	  Removed legacy applications: ftp, kx, login, popper, push,
+	  rcp, rsh, telnet, xnlock
+	</change>
+      </major-changes>
+    </release>
+
 
   </releases>
 
