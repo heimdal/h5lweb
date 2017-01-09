@@ -50,7 +50,7 @@
 	<a href="https://github.com/heimdal/heimdal/issues/">GitHub's Heimdal Issues page</a>.
       </p>
 
-      <h3 link="tess">
+      <h3 link="tests">
 	Adding tests to the regression suite
       </h3>
 
@@ -71,35 +71,18 @@
 
       <p>
 	You submit the new tests and questions via
-	<a href="https://github.com/heimdal/heimdal/issues/">GitHub's Heimdal Issues page</a>.
+	<a href="https://github.com/heimdal/heimdal/pulls/">GitHub's Heimdal Pull Requests page</a>.
       </p>
 
-      <h3 link="buildbot">
-	Buildbot
+      <h3 link="ci">
+	  Continuous integration
       </h3>
 
       <p>
-	<a href="http://buildbot.h5l.org:8080/waterfall">Buildbot</a> allows
-	automated testing of Heimdal. If you can contribute cpu
-	resources, or os installation that run ON i386 in vmware to
-	build please let us know.
+	<a href="https://travis-ci.org/">Travis CI</a> is set up for Heimdal branches.
+	It will automatically build and run the tests in each Heimdal pull request, and
+	report the results.
       </p>
-
-      <p>
-	Software that needs to be installed: 
-
-	<ul>
-	  <li>yacc/byacc/bison</li>
-	  <li>lex/flex</li>
-	  <li>automake</li>
-	  <li>autoconf</li>
-	  <li>libtool</li>
-	  <li>makeinfo</li>
-	  <li>unzip</li>
-	  <li>buildbot</li>
-	</ul>
-      </p>
-
 
       <h3 link="thanks">
 	Thank you
