@@ -16,6 +16,11 @@
       <h3>Download sources</h3>
       <p>
 	The source tar files can be found on the
+	<a href="https://github.com/heimdal/heimdal/releases">
+	  GitHub release site.
+      </p>
+      <p>
+	Historic source tar files can be found on the
 	<a href="http://www.h5l.org/dist/src/">
 	  ftp site</a>.
       </p>
@@ -47,12 +52,12 @@
 	autoreconf -f -i
       </pre>
 
-      <h3>Heimdal 1.5 release branch</h3>
+      <h3>Heimdal 7.1 release branch</h3>
 
       <pre class="example">
 	git clone git@github.com:heimdal/heimdal.git
 	cd heimdal
-	git checkout -b heimdal-1-5-branch origin/heimdal-1-5-branch
+	git checkout -b heimdal-7-1-branch origin/heimdal-7-1-branch
 	autoreconf -f -i
       </pre>
 

@@ -851,7 +851,7 @@ Attributes [disallow-all-tix]:-disallow-all-tix
 	</p>
 	<p>
 	  Patch
-	  (<a href="ftp://ftp.pdc.kth.se/pub/heimdal/src/heimdal-0.7.2-setuid-patch.txt">heimdal-0.7.2-setuid-patch</a>)
+	  (<a href="http://www.h5l.org/dist/src/old/heimdal-0.7.2-setuid-patch.txt">heimdal-0.7.2-setuid-patch</a>)
 	  for Heimdal 0.7.2 fixes this problem.
 	</p>
 	<p>
