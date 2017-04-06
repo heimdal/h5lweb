@@ -87,9 +87,7 @@
 	  The code is currently at release 
 	  <show-last-release-version/>
 	  and is available at
-	  <a href="http://www.h5l.org/dist/">www.h5l.org/dist/</a>,
-	  also mirrored by
-	  <a href="ftp://ftp.sunet.se/pub/unix/admin/mirror-pdc/heimdal/src/">SUNET</a>.
+	  <a href="https://github.com/heimdal/heimdal/releases">https://github.com/heimdal/heimdal/releases</a>.
 
 	  Information about where to find the <a href="sources.html">source code</a> and 
 	  <a href="releases/">older release history</a> is also
