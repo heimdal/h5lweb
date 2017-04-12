@@ -41,13 +41,13 @@
       </p>
 
       <pre class="example">
-	git clone git@github.com:heimdal/heimdal.git
+	git clone https://github.com/heimdal/heimdal.git
       </pre>
 
       <h3>Heimdal master (development branch)</h3>
       
       <pre class="example">
-	git clone git@github.com:heimdal/heimdal.git
+	git clone https://github.com/heimdal/heimdal.git
 	cd heimdal	
 	autoreconf -f -i
       </pre>
@@ -55,7 +55,7 @@
       <h3>Heimdal 7.1 release branch</h3>
 
       <pre class="example">
-	git clone git@github.com:heimdal/heimdal.git
+	git clone https://github.com/heimdal/heimdal.git
 	cd heimdal
 	git checkout -b heimdal-7-1-branch origin/heimdal-7-1-branch
 	autoreconf -f -i
