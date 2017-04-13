@@ -651,7 +651,47 @@
       </major-changes>
     </release>
 
+    <release>
+      <name>Heimdal</name>
+      <version>7.2.0</version>
+      <date>2017-03-16</date>
+      <major-changes>
+	<change>
+	  Fixed memory leak in malloc error recovery in NTLM GSSAPI mechanism
+	</change>
+	<change>
+	  hdb: add missing export hdb_generate_key_set_password_with_ks_tuple
+	</change>
+	<change>
+	   Fix signature of hdb_generate_key_set_password()
+	</change>
+	<change>
+	   iprop: handle case where master sends nothing new
+	</change>
+	<change>
+	   Do not detect x32 as 64-bit platform.
+	</change>
+      </major-changes>
+    </release>
 
+    <release>
+      <name>Heimdal</name>
+      <version>7.3.0</version>
+      <date>2017-04-13</date>
+      <major-changes>
+	<change>
+	   Fix transit path validation.  Commit f469fc6 (2010-10-02) inadvertently
+	   caused the previous hop realm to not be added to the transit path
+	   of issued tickets.  This may, in some cases, enable bypass of capath
+	   policy in Heimdal versions 1.5 through 7.2.
+
+	   Note, this may break sites that rely on the bug.  With the bug some
+   	   incomplete [capaths] worked, that should not have.  These may now break
+   	   authentication in some cross-realm configurations.
+	   (CVE-2017-6594)
+	</change>
+      </major-changes>
+    </release>
   </releases>
 
   <!---
