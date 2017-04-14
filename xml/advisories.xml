@@ -13,6 +13,9 @@
   <one>
     <content>
       <p>
+	   Click advisory to expand for detailed information and affected versions
+      </p>
+      <p>
 	<advisory-content/>
       </p>
     </content>
