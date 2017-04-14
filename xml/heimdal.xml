@@ -576,6 +576,7 @@
       <vulnerabilities>
 	<vulnerability date="2012-01-10"/>
 	<vulnerability date="2012-01-11"/>
+	<vulnerability date="2017-04-13"/>
       </vulnerabilities>
     </release>
 
@@ -592,6 +593,7 @@
       <vulnerabilities>
 	<vulnerability date="2012-01-10"/>
 	<vulnerability date="2012-01-11"/>
+	<vulnerability date="2017-04-13"/>
       </vulnerabilities>
     </release>
 
@@ -602,6 +604,7 @@
       <vulnerabilities>
 	<vulnerability date="2012-01-10"/>
 	<vulnerability date="2012-01-11"/>
+	<vulnerability date="2017-04-13"/>
       </vulnerabilities>
       <major-changes>
 	<change>Security fixes</change>
@@ -612,6 +615,9 @@
       <name>Heimdal</name>
       <version>7.1.0</version>
       <date>2016-12-22</date>
+      <vulnerabilities>
+	<vulnerability date="2017-04-13"/>
+      </vulnerabilities>
       <major-changes>
 	<change>hcrypto is now thread safe on all platforms and as
           much as possible hcrypto now uses the operating system's
@@ -655,6 +661,9 @@
       <name>Heimdal</name>
       <version>7.2.0</version>
       <date>2017-03-16</date>
+      <vulnerabilities>
+	<vulnerability date="2017-04-13"/>
+      </vulnerabilities>
       <major-changes>
 	<change>
 	  Fixed memory leak in malloc error recovery in NTLM GSSAPI mechanism
@@ -686,8 +695,8 @@
 	   policy in Heimdal versions 1.5 through 7.2.
 
 	   Note, this may break sites that rely on the bug.  With the bug some
-   	   incomplete [capaths] worked, that should not have.  These may now break
-   	   authentication in some cross-realm configurations.
+	   incomplete [capaths] worked, that should not have.  These may now break
+	   authentication in some cross-realm configurations.
 	   (CVE-2017-6594)
 	</change>
       </major-changes>
@@ -964,11 +973,29 @@ Attributes [disallow-all-tix]:-disallow-all-tix
     </vulnerability>
 
     <vulnerability date="2012-01-11">
-      <short>libkrb5 checksum - denial of serice</short>
+      <short>libkrb5 checksum - denial of service</short>
       <description>
 	<p>
-	  By chooice a specific PAC, the attacker and cause a
-	  overwriting the heap with data the attacker don't control.
+	  By choosing a specific PAC, the attacker can cause an
+	  overwriting of the heap with data the attacker doesn't control.
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2017-04-13">
+      <short>Fix transit path validation</short>
+      <cve>CVE-2017-6594</cve>
+      <description>
+	<p>
+	  Commit f469fc6 (2010-10-02) inadvertently caused the previous hop realm
+	  to not be added to the transit path
+	  of issued tickets.  This may, in some cases, enable bypass of capath
+	  policy in Heimdal versions 1.5 through 7.2.
+
+	  Note, this may break sites that rely on the bug.  With the bug some
+	  incomplete [capaths] worked, that should not have.  These may now break
+	  authentication in some cross-realm configurations.
+	  (CVE-2017-6594)
 	</p>
       </description>
     </vulnerability>
