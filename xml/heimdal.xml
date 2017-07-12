@@ -649,6 +649,7 @@
       <name>Heimdal</name>
       <version>7.1.0</version>
       <date>2016-12-22</date>
+      <deprecated-release/>
       <vulnerabilities>
 	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2017-04-13"/>
@@ -696,6 +697,7 @@
       <name>Heimdal</name>
       <version>7.2.0</version>
       <date>2017-03-16</date>
+      <deprecated-release/>
       <vulnerabilities>
 	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2017-04-13"/>
@@ -723,6 +725,7 @@
       <name>Heimdal</name>
       <version>7.3.0</version>
       <date>2017-04-13</date>
+      <deprecated-release/>
       <vulnerabilities>
 	<vulnerability date="2017-07-11"/>
       </vulnerabilities>
