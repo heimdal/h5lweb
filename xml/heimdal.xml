@@ -701,6 +701,26 @@
 	</change>
       </major-changes>
     </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>7.4.0</version>
+      <date>2017-07-11</date>
+      <major-changes>
+	<change>
+	   Fix CVE-2017-11103: Orpheus' Lyre KDC-REP service name validation
+	   This is a critical vulnerability.
+
+	   In _krb5_extract_ticket() the KDC-REP service name must be obtained from
+	   encrypted version stored in 'enc_part' instead of the unencrypted version
+	   stored in 'ticket'.  Use of the unecrypted version provides an
+	   opportunity for successful server impersonation and other attacks.
+
+	   See the <a href="https://www.orpheus-lyre.info/"> Orpheus Lyre website</a>
+	   for more details.
+	</change>
+      </major-changes>
+    </release>
   </releases>
 
   <!---
@@ -996,6 +1016,25 @@ Attributes [disallow-all-tix]:-disallow-all-tix
 	  incomplete [capaths] worked, that should not have.  These may now break
 	  authentication in some cross-realm configurations.
 	  (CVE-2017-6594)
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2017-07-11">
+      <short>Fix KDC-REP service name validation</short>
+      <cve>CVE-2017-11103</cve>
+      <description>
+	<p>
+	  Fix CVE-2017-11103: Orpheus' Lyre KDC-REP service name validation
+	  This is a critical vulnerability.
+
+	  In _krb5_extract_ticket() the KDC-REP service name must be obtained from
+	  encrypted version stored in 'enc_part' instead of the unencrypted version
+	  stored in 'ticket'.  Use of the unecrypted version provides an
+	  opportunity for successful server impersonation and other attacks.
+
+	  See the <a href="https://www.orpheus-lyre.info/"> Orpheus Lyre website</a>
+	  for more details. (CVE-2017-11103)
 	</p>
       </description>
     </vulnerability>
