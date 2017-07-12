@@ -13,6 +13,9 @@
       <version>0.0a</version>
       <date>1997-07-17</date>
       <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
+      </vulnerabilities>
       <major-changes>
 	<change>
 	  First public release of Heimdal. First commit was done
@@ -27,6 +30,7 @@
       <date>2003-05-12</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2006-08-08"/>
 	<vulnerability date="2006-02-06"/>
 	<vulnerability date="2005-06-20"/>
@@ -64,6 +68,7 @@
       <date>2004-04-01</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2006-08-08"/>
 	<vulnerability date="2006-02-06"/>
 	<vulnerability date="2005-06-20"/>
@@ -89,6 +94,7 @@
       <date>2004-05-06</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2006-08-08"/>
 	<vulnerability date="2006-02-06"/>
 	<vulnerability date="2005-06-20"/>
@@ -109,6 +115,7 @@
       <date>2004-09-13</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2006-08-08"/>
 	<vulnerability date="2006-02-06"/>
 	<vulnerability date="2005-06-20"/>
@@ -132,6 +139,7 @@
       <date>2005-04-20</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2006-08-08"/>
 	<vulnerability date="2006-02-06"/>
 	<vulnerability date="2005-06-20"/>
@@ -156,6 +164,7 @@
       <date>2005-04-20</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2006-08-08"/>
 	<vulnerability date="2006-02-06"/>
       </vulnerabilities>
@@ -171,6 +180,7 @@
       <date>2005-04-20</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2006-08-08"/>
 	<vulnerability date="2006-02-06"/>
       </vulnerabilities>
@@ -189,6 +199,7 @@
       <date>2005-08-14</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2006-02-06"/>
 	<vulnerability date="2006-08-08"/>
       </vulnerabilities>
@@ -203,6 +214,7 @@
       <date>2006-02-06</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2006-08-08"/>
       </vulnerabilities>
       <major-changes>
@@ -225,6 +237,7 @@
       <date>2006-02-06</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2010-05-27"/>
 	<vulnerability date="2006-08-08"/>
       </vulnerabilities>
@@ -263,6 +276,9 @@
       <version>0.8</version>
       <date>2007-04-13</date>
       <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
+      </vulnerabilities>
       <major-changes>
 	<change>PK-INIT support.</change>
 	<change>HDB extensions support, used by PK-INIT.</change>
@@ -312,6 +328,7 @@
       <date>2007-07-17</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
       </vulnerabilities>
@@ -349,6 +366,7 @@
       <date>2007-08-08</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
       </vulnerabilities>
@@ -372,6 +390,7 @@
       <deprecated-release/>
       <date>2007-12-15</date>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
       </vulnerabilities>
@@ -387,6 +406,7 @@
       <date>2008-01-24</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
       </vulnerabilities>
@@ -410,6 +430,7 @@
       <date>2008-05-22</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
       </vulnerabilities>
@@ -448,6 +469,7 @@
       <date>2008-08-19</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
 	<vulnerability date="2012-01-10"/>
@@ -467,6 +489,7 @@
       <date>2009-11-15</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
 	<vulnerability date="2012-01-10"/>
@@ -496,6 +519,9 @@
       <version>1.3.1</version>
       <date>2009-11-20</date>
       <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
+      </vulnerabilities>
       <major-changes>
 	<change>Make work with OpenLDAPs krb5 overlay</change>
       </major-changes>
@@ -531,6 +557,7 @@
       <date>2010-05-27</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2010-05-27"/>
 	<vulnerability date="2012-01-10"/>
 	<vulnerability date="2012-01-11"/>
@@ -556,6 +583,7 @@
 	<change>Bugfixes</change>
       </major-changes>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2012-01-10"/>
 	<vulnerability date="2012-01-11"/>
       </vulnerabilities>
@@ -565,6 +593,7 @@
       <name>Heimdal</name>
       <version>1.5</version>
       <date>2011-09-20</date>
+      <deprecated-release/>
       <major-changes>
 	<change>Support GSS name extensions/attributes</change>
 	<change>SHA512 support</change>
@@ -574,6 +603,7 @@
 	<change>Bugfixes</change>
       </major-changes>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2012-01-10"/>
 	<vulnerability date="2012-01-11"/>
 	<vulnerability date="2017-04-13"/>
@@ -584,6 +614,7 @@
       <name>Heimdal</name>
       <version>1.5.1</version>
       <date>2011-10-02</date>
+      <deprecated-release/>
       <major-changes>
 	<change>Fix building on Solaris, requires c99</change>
 	<change>Fix building on Windows</change>
@@ -591,6 +622,7 @@
 	<change></change>
       </major-changes>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2012-01-10"/>
 	<vulnerability date="2012-01-11"/>
 	<vulnerability date="2017-04-13"/>
@@ -601,7 +633,9 @@
       <name>Heimdal</name>
       <version>1.5.2</version>
       <date>2012-01-11</date>
+      <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2012-01-10"/>
 	<vulnerability date="2012-01-11"/>
 	<vulnerability date="2017-04-13"/>
@@ -616,6 +650,7 @@
       <version>7.1.0</version>
       <date>2016-12-22</date>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2017-04-13"/>
       </vulnerabilities>
       <major-changes>
@@ -662,6 +697,7 @@
       <version>7.2.0</version>
       <date>2017-03-16</date>
       <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2017-04-13"/>
       </vulnerabilities>
       <major-changes>
@@ -687,6 +723,9 @@
       <name>Heimdal</name>
       <version>7.3.0</version>
       <date>2017-04-13</date>
+      <vulnerabilities>
+	<vulnerability date="2017-07-11"/>
+      </vulnerabilities>
       <major-changes>
 	<change>
 	   Fix transit path validation.  Commit f469fc6 (2010-10-02) inadvertently
