@@ -31,12 +31,12 @@
 	      <xsl:choose>
 		<xsl:when test="deprecated-release">
 		  and is deprecated
-		  <a href="/dist/src/old/heimdal-{version}.tar.gz" onclick="javascript: pageTracker._trackPageview('/downloads/heimdal-{version}'); ">
+		  <a href="https://github.com/heimdal/heimdal/releases/download/heimdal-{version}/heimdal-{version}.tar.gz">
 		    heimdal-<xsl:value-of select="version"/>.tar.gz
 		  </a>
 		</xsl:when>
 		<xsl:otherwise>
-		  <a href="/dist/src/heimdal-{version}.tar.gz" onclick="javascript: pageTracker._trackPageview('/downloads/heimdal-{version}'); ">
+		  <a href="https://github.com/heimdal/heimdal/releases/download/heimdal-{version}/heimdal-{version}.tar.gz">
 		    heimdal-<xsl:value-of select="version"/>.tar.gz
 		  </a>
 		</xsl:otherwise>
