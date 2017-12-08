@@ -763,6 +763,19 @@
 	</change>
       </major-changes>
     </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>7.5.0</version>
+      <date>2017-12-08</date>
+      <major-changes>
+	<change>
+	   Fix CVE-2017-17439: In Heimdal 7.1 through 7.4, remote unauthenticated attackers
+       are able to crash the KDC by sending a crafted UDP packet containing empty data
+       fields for client name or realm.
+	</change>
+      </major-changes>
+    </release>
   </releases>
 
   <!---
@@ -1077,6 +1090,18 @@ Attributes [disallow-all-tix]:-disallow-all-tix
 
 	  See the <a href="https://www.orpheus-lyre.info/"> Orpheus Lyre website</a>
 	  for more details. (CVE-2017-11103)
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2017-12-08">
+      <short>Fix remote DoS via unauthenticated UDP packet</short>
+      <cve>CVE-2017-17439</cve>
+      <description>
+	<p>
+       Fix CVE-2017-17439: In Heimdal 7.1 through 7.4, remote unauthenticated attackers
+       are able to crash the KDC by sending a crafted UDP packet containing empty data
+       fields for client name or realm.
 	</p>
       </description>
     </vulnerability>
