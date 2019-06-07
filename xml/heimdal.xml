@@ -200,8 +200,8 @@
       <deprecated-release/>
       <vulnerabilities>
 	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2006-02-06"/>
 	<vulnerability date="2006-08-08"/>
+	<vulnerability date="2006-02-06"/>
       </vulnerabilities>
       <major-changes>
 	<change>Bugfixes</change>
@@ -277,6 +277,7 @@
       <date>2007-04-13</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-14"/>
 	<vulnerability date="2017-07-11"/>
       </vulnerabilities>
       <major-changes>
@@ -328,9 +329,10 @@
       <date>2007-07-17</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-14"/>
 	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
+	<vulnerability date="2010-03-21"/>
       </vulnerabilities>
       <major-changes>
 	<change>Add gss_pseudo_random() for mechglue and krb5.</change>
@@ -366,9 +368,10 @@
       <date>2007-08-08</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-14"/>
 	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
+	<vulnerability date="2010-03-21"/>
       </vulnerabilities>
       <major-changes>
 	<change>Serveral bug fixes to iprop.</change>
@@ -390,9 +393,10 @@
       <deprecated-release/>
       <date>2007-12-15</date>
       <vulnerabilities>
+	<vulnerability date="2019-05-14"/>
 	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
+	<vulnerability date="2010-03-21"/>
       </vulnerabilities>
       <major-changes>
 	<change>Many bugfixes.</change>
@@ -406,9 +410,10 @@
       <date>2008-01-24</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-14"/>
 	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
+	<vulnerability date="2010-03-21"/>
       </vulnerabilities>
       <major-changes>
 	<change>Read-only PKCS11 provider built-in to hx509.</change>
@@ -430,9 +435,10 @@
       <date>2008-05-22</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-14"/>
 	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
+	<vulnerability date="2010-03-21"/>
       </vulnerabilities>
       <major-changes>
 	<change>[HEIMDAL-10] - Follow-up on bug report for SEGFAULT in gss_display_name/gss_export_name when using SPNEGO</change>
@@ -469,11 +475,12 @@
       <date>2008-08-19</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-14"/>
 	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
-	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2012-01-11"/>
+	<vulnerability date="2012-01-10"/>
       </vulnerabilities>
       <major-changes>
 	<change>[HEIMDAL-147] - Heimdal 1.2 not compiling on Solaris</change>
@@ -489,11 +496,12 @@
       <date>2009-11-15</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-14"/>
 	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2010-05-27"/>
-	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2010-03-21"/>
 	<vulnerability date="2012-01-11"/>
+	<vulnerability date="2012-01-10"/>
       </vulnerabilities>
       <major-changes>
 	<change>Partial support for MIT kadmind rpc protocol in kadmind</change>
@@ -520,6 +528,7 @@
       <date>2009-11-20</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-14"/>
 	<vulnerability date="2017-07-11"/>
       </vulnerabilities>
       <major-changes>
@@ -533,10 +542,12 @@
       <date>2010-03-21</date>
       <deprecated-release/>
       <vulnerabilities>
-	<vulnerability date="2010-03-21"/>
-	<vulnerability date="2010-05-27"/>
-	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2019-05-14"/>
+	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2012-01-11"/>
+	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2010-05-27"/>
+	<vulnerability date="2010-03-21"/>
       </vulnerabilities>
       <major-changes>
 	<change>Don't mix length when clearing hmac (could memset too much)</change>
@@ -557,10 +568,11 @@
       <date>2010-05-27</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-14"/>
 	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2010-05-27"/>
-	<vulnerability date="2012-01-10"/>
 	<vulnerability date="2012-01-11"/>
+	<vulnerability date="2012-01-10"/>
+	<vulnerability date="2010-05-27"/>
       </vulnerabilities>
       <major-changes>
 	<change>Check the GSS-API checksum exists before trying to use it</change>
@@ -574,6 +586,13 @@
       <version>1.4</version>
       <date>2010-09-14</date>
       <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2019-05-15"/>
+	<vulnerability date="2019-05-14"/>
+	<vulnerability date="2017-07-11"/>
+	<vulnerability date="2012-01-11"/>
+	<vulnerability date="2012-01-10"/>
+      </vulnerabilities>
       <major-changes>
 	<change>Support for reading MIT database file directly</change>
 	<change>KCM is polished up and now used in production</change>
@@ -582,11 +601,6 @@
 	<change>Native Windows client support</change>
 	<change>Bugfixes</change>
       </major-changes>
-      <vulnerabilities>
-	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2012-01-10"/>
-	<vulnerability date="2012-01-11"/>
-      </vulnerabilities>
     </release>
 
     <release>
@@ -594,6 +608,14 @@
       <version>1.5</version>
       <date>2011-09-20</date>
       <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2019-05-15"/>
+	<vulnerability date="2019-05-14"/>
+	<vulnerability date="2017-07-11"/>
+	<vulnerability date="2017-04-13"/>
+	<vulnerability date="2012-01-11"/>
+	<vulnerability date="2012-01-10"/>
+      </vulnerabilities>
       <major-changes>
 	<change>Support GSS name extensions/attributes</change>
 	<change>SHA512 support</change>
@@ -602,12 +624,6 @@
 	<change>Replace editline with libedit</change>
 	<change>Bugfixes</change>
       </major-changes>
-      <vulnerabilities>
-	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2012-01-10"/>
-	<vulnerability date="2012-01-11"/>
-	<vulnerability date="2017-04-13"/>
-      </vulnerabilities>
     </release>
 
     <release>
@@ -615,18 +631,20 @@
       <version>1.5.1</version>
       <date>2011-10-02</date>
       <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2019-05-15"/>
+	<vulnerability date="2019-05-14"/>
+	<vulnerability date="2017-07-11"/>
+	<vulnerability date="2017-04-13"/>
+	<vulnerability date="2012-01-11"/>
+	<vulnerability date="2012-01-10"/>
+      </vulnerabilities>
       <major-changes>
 	<change>Fix building on Solaris, requires c99</change>
 	<change>Fix building on Windows</change>
 	<change>Build system updates</change>
 	<change></change>
       </major-changes>
-      <vulnerabilities>
-	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2012-01-10"/>
-	<vulnerability date="2012-01-11"/>
-	<vulnerability date="2017-04-13"/>
-      </vulnerabilities>
     </release>
 
     <release>
@@ -635,10 +653,12 @@
       <date>2012-01-11</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-15"/>
+	<vulnerability date="2019-05-14"/>
 	<vulnerability date="2017-07-11"/>
-	<vulnerability date="2012-01-10"/>
-	<vulnerability date="2012-01-11"/>
 	<vulnerability date="2017-04-13"/>
+	<vulnerability date="2012-01-11"/>
+	<vulnerability date="2012-01-10"/>
       </vulnerabilities>
       <major-changes>
 	<change>Security fixes</change>
@@ -651,6 +671,9 @@
       <date>2016-12-22</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-15"/>
+	<vulnerability date="2019-05-14"/>
+	<vulnerability date="2017-12-08"/>
 	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2017-04-13"/>
       </vulnerabilities>
@@ -699,6 +722,9 @@
       <date>2017-03-16</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-15"/>
+	<vulnerability date="2019-05-14"/>
+	<vulnerability date="2017-12-08"/>
 	<vulnerability date="2017-07-11"/>
 	<vulnerability date="2017-04-13"/>
       </vulnerabilities>
@@ -727,6 +753,9 @@
       <date>2017-04-13</date>
       <deprecated-release/>
       <vulnerabilities>
+	<vulnerability date="2019-05-15"/>
+	<vulnerability date="2019-05-14"/>
+	<vulnerability date="2017-12-08"/>
 	<vulnerability date="2017-07-11"/>
       </vulnerabilities>
       <major-changes>
@@ -748,6 +777,12 @@
       <name>Heimdal</name>
       <version>7.4.0</version>
       <date>2017-07-11</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2019-05-15"/>
+	<vulnerability date="2019-05-14"/>
+	<vulnerability date="2017-12-08"/>
+      </vulnerabilities>
       <major-changes>
 	<change>
 	   Fix CVE-2017-11103: Orpheus' Lyre KDC-REP service name validation
@@ -768,11 +803,68 @@
       <name>Heimdal</name>
       <version>7.5.0</version>
       <date>2017-12-08</date>
+      <deprecated-release/>
+      <vulnerabilities>
+	<vulnerability date="2019-05-15"/>
+	<vulnerability date="2019-05-14"/>
+      </vulnerabilities>
       <major-changes>
 	<change>
 	   Fix CVE-2017-17439: In Heimdal 7.1 through 7.4, remote unauthenticated attackers
        are able to crash the KDC by sending a crafted UDP packet containing empty data
        fields for client name or realm.
+	</change>
+      </major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>7.6.0</version>
+      <date>2019-05-15</date>
+      <deprecated-release/>
+      <major-changes>
+	<change>
+	    CVE-2018-16860 Heimdal KDC: Reject PA-S4U2Self with unkeyed checksum
+
+	    When the Heimdal KDC checks the checksum that is placed on the
+	    S4U2Self packet by the server to protect the requested principal
+	    against modification, it does not confirm that the checksum
+	    algorithm that protects the user name (principal) in the request
+	    is keyed. This allows a man-in-the-middle attacker who can
+	    intercept the request to the KDC to modify the packet by replacing
+	    the user name (principal) in the request with any desired user
+	    name (principal) that exists in the KDC and replace the checksum
+	    protecting that name with a CRC32 checksum (which requires no
+	    prior knowledge to compute).
+
+	    This would allow a S4U2Self ticket requested on behalf of user
+	    name (principal) user@EXAMPLE.COM to any service to be changed
+	    to a S4U2Self ticket with a user name (principal) of
+	    Administrator@EXAMPLE.COM. This ticket would then contain the
+	    PAC of the modified user name (principal).
+	</change>
+	<change>
+	    CVE-2019-12098, client-only:
+
+	    RFC8062 Section 7 requires verification of the PA-PKINIT-KX key exchange
+	    when anonymous PKINIT is used. Failure to do so can permit an active
+	    attacker to become a man-in-the-middle.
+	</change>
+	<change>
+	    See <a href="https://github.com/heimdal/heimdal/releases/tag/heimdal-7.6.0"/>
+	    for a list bug fixes and feature enhancements.
+	</change>
+	</major-changes>
+    </release>
+
+    <release>
+      <name>Heimdal</name>
+      <version>7.7.0</version>
+      <date>2019-06-07</date>
+      <major-changes>
+	<change>
+	    See <a href="https://github.com/heimdal/heimdal/releases/tag/heimdal-7.7.0"/>
+	    for a list of bug fixes and feature enhancements.
 	</change>
       </major-changes>
     </release>
@@ -1102,6 +1194,43 @@ Attributes [disallow-all-tix]:-disallow-all-tix
        Fix CVE-2017-17439: In Heimdal 7.1 through 7.4, remote unauthenticated attackers
        are able to crash the KDC by sending a crafted UDP packet containing empty data
        fields for client name or realm.
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2019-05-14">
+      <short>Heimdal KDC: Reject PA-S4U2Self with unkeyed checksum</short>
+      <cve>CVE-2018-16860</cve>
+      <description>
+	<p>
+       When the Heimdal KDC checks the checksum that is placed on the
+       S4U2Self packet by the server to protect the requested principal
+       against modification, it does not confirm that the checksum
+       algorithm that protects the user name (principal) in the request
+       is keyed. This allows a man-in-the-middle attacker who can
+       intercept the request to the KDC to modify the packet by replacing
+       the user name (principal) in the request with any desired user
+       name (principal) that exists in the KDC and replace the checksum
+       protecting that name with a CRC32 checksum (which requires no
+       prior knowledge to compute).
+
+       This would allow a S4U2Self ticket requested on behalf of user
+       name (principal) user@EXAMPLE.COM to any service to be changed
+       to a S4U2Self ticket with a user name (principal) of
+       Administrator@EXAMPLE.COM. This ticket would then contain the
+       PAC of the modified user name (principal).
+	</p>
+      </description>
+    </vulnerability>
+
+    <vulnerability date="2019-05-15">
+      <short>Client only: Fix failure to verify PA-PKINIT-KX key exchange with anonymous</short>
+      <cve>CVE-2019-12098</cve>
+      <description>
+	<p>
+       RFC8062 Section 7 requires verification of the PA-PKINIT-KX key exchange
+       when anonymous PKINIT is used. Failure to do so can permit an active
+       attacker to become a man-in-the-middle.
 	</p>
       </description>
     </vulnerability>
