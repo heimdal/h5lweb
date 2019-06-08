@@ -31,13 +31,13 @@
 	      <xsl:choose>
 		<xsl:when test="deprecated-release">
 		  and is deprecated
-		  <a href="https://github.com/heimdal/heimdal/releases/download/heimdal-{version}/heimdal-{version}.tar.gz">
-		    heimdal-<xsl:value-of select="version"/>.tar.gz
+		  <a href="https://github.com/heimdal/heimdal/releases/tag/heimdal-{version}">
+		    heimdal-<xsl:value-of select="version"/>
 		  </a>
 		</xsl:when>
 		<xsl:otherwise>
-		  <a href="https://github.com/heimdal/heimdal/releases/download/heimdal-{version}/heimdal-{version}.tar.gz">
-		    heimdal-<xsl:value-of select="version"/>.tar.gz
+		  <a href="https://github.com/heimdal/heimdal/releases/tag/heimdal-{version}">
+		    heimdal-<xsl:value-of select="version"/>
 		  </a>
 		</xsl:otherwise>
 	      </xsl:choose>

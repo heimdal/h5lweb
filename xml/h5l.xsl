@@ -121,7 +121,7 @@
   <xsl:for-each select="/doc/software/releases/release">
     <xsl:sort select="version" order="descending"/>
     <xsl:if test="position() = 1">
-      <a href="https://github.com/heimdal/heimdal/releases/download/heimdal-{version}/heimdal-{version}.tar.gz">
+      <a href="https://github.com/heimdal/heimdal/releases/tag/heimdal-{version}">
 	Download 
 	<xsl:value-of select="version"/>
       </a>
